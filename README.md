@@ -68,12 +68,33 @@ Go to the [milestones tab](../../milestone/1) to track your progress.
 
 ### Description
 
+B-Trade is a trading platform for crypto. B-Trade is an easiest way to trade crypto with advance tools to increase your profits with leverage.
+
 **Required:** update [your repository](https://stackoverflow.com/questions/7757751/how-do-you-change-a-repository-description-on-github) with a short description of your project.
+
+#### DELIVERABLE
+
+Cloud hosted web-application (B-Trade) that allows for the following functionality:
+## V1:
+- User authentication
+- Crypto assets live feed
+- Portfolio management (add/remove cryptocurrencies) for live feed
+## V2:
+- Ability for users to track their crypto assets (Wallets history & Profit/Loss)
+- System alerts for users when crypto assets are low or high
+- Ability for users to trade crypto assets
+
+#### MILESTONES V1:
+
+- Sprint 1: 10%  - Cloud hosted app with user registration/authentication
+- Sprint 2: 40%  - User auth completion & live feed of assets listings
+- Sprint 3: 100% - Portfolio management, crypto profile & profit loss tracking
 
 ### Mockups
 
 *View `README.md` to see how to replace me with mockups.*
 
-| ![Benjamin Bannekat](/mockups/github-cat.png) | ![Benjamin Bannekat](/mockups/github-cat.png) |
+| ![Benjamin Bannekat](/mockups/1-login.jpeg) | ![Benjamin Bannekat](/mockups/2-profile.jpeg) |
 | -------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| ![Benjamin Bannekat](/mockups/github-cat.png) | ![Benjamin Bannekat](/mockups/github-cat.png) |
+| ![Benjamin Bannekat](/mockups/3-dashboard.jpeg) | ![Benjamin Bannekat](/mockups/4-live-feed.jpeg) |
+| ![Benjamin Bannekat](/mockups/5-menu.jpeg) |
