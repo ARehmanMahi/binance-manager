@@ -94,7 +94,7 @@ Cloud hosted web-application (B-Trade) that allows for the following functionali
 
 *View `README.md` to see how to replace me with mockups.*
 
-| ![Benjamin Bannekat](/mockups/1-login.jpeg) | ![Benjamin Bannekat](/mockups/2-profile.jpeg) |
+| ![login](/mockups/1-login.jpeg) | ![profile](/mockups/2-profile.jpeg) |
 | -------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| ![Benjamin Bannekat](/mockups/3-dashboard.jpeg) | ![Benjamin Bannekat](/mockups/4-live-feed.jpeg) |
-| ![Benjamin Bannekat](/mockups/5-menu.jpeg) |
+| ![dashboard](/mockups/3-dashboard.jpeg) | ![ive feed](/mockups/4-live-feed.jpeg) |
+| ![menu](/mockups/5-menu.jpeg) |
