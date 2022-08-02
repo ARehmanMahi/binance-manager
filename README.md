@@ -68,9 +68,7 @@ Go to the [milestones tab](../../milestone/1) to track your progress.
 
 ### Description
 
-B-Trade is a trading platform for crypto. B-Trade is an easiest way to trade crypto with advance tools to increase your profits with leverage.
-
-**Required:** update [your repository](https://stackoverflow.com/questions/7757751/how-do-you-change-a-repository-description-on-github) with a short description of your project.
+B-Trade is a trading platform for crypto. B-Trade is an easier way to trade crypto with advance tools to increase your profits with leverage.
 
 #### DELIVERABLE
 
