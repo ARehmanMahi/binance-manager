@@ -1,4 +1,5 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=8161342&assignment_repo_type=AssignmentRepo)
+
 # React Solo Project
 
 ## Requirements
@@ -66,26 +67,31 @@ Go to the [milestones tab](../../milestone/1) to track your progress.
 
 ## Project Overview
 
-## Public URL
+### Public URL
+
 [https://finance-mentor.web.app](https://finance-mentor.web.app)
 
 ### Description
 
-B-Trade is a trading platform for crypto. B-Trade is an easier way to trade crypto with advance tools to increase profits with leverage.
+B-Trade is a trading platform for crypto. B-Trade is an easier way to trade crypto with advance tools to increase your profits with leverage.
 
-#### DELIVERABLE
+### DELIVERABLE
 
 Cloud hosted web-application (B-Trade) that allows for the following functionality:
-## V1:
+
+### V1
+
 - User authentication
 - Crypto assets live feed
 - Portfolio management (add/remove cryptocurrencies) for live feed
-## V2:
+
+### V2
+
 - Ability for users to track their crypto assets (Wallets history & Profit/Loss)
 - System alerts for users when crypto assets are low or high
 - Ability for users to trade crypto assets
 
-#### MILESTONES V1:
+### MILESTONES V1
 
 - Sprint 1: 10%  - Cloud hosted app with user registration/authentication
 - Sprint 2: 40%  - User auth completion & live feed of assets listings
