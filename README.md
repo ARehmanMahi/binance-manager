@@ -66,9 +66,12 @@ Go to the [milestones tab](../../milestone/1) to track your progress.
 
 ## Project Overview
 
+## Public URL
+[https://finance-mentor.web.app/] (https://finance-mentor.web.app/)
+
 ### Description
 
-B-Trade is a trading platform for crypto. B-Trade is an easier way to trade crypto with advance tools to increase your profits with leverage.
+B-Trade is a trading platform for crypto. B-Trade is an easier way to trade crypto with advance tools to increase profits with leverage.
 
 #### DELIVERABLE
 
