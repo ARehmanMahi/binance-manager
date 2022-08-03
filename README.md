@@ -67,7 +67,7 @@ Go to the [milestones tab](../../milestone/1) to track your progress.
 ## Project Overview
 
 ## Public URL
-[https://finance-mentor.web.app/] (https://finance-mentor.web.app/)
+[https://finance-mentor.web.app](https://finance-mentor.web.app)
 
 ### Description
 
