@@ -75,7 +75,7 @@ Go to the [milestones tab](../../milestone/1) to track your progress.
 
 B-Trade is a trading platform for crypto. B-Trade is an easier way to trade crypto with advance tools to increase your profits with leverage.
 
-### DELIVERABLE
+### Deliverable
 
 Cloud hosted web-application (B-Trade) that allows for the following functionality:
 
@@ -91,7 +91,7 @@ Cloud hosted web-application (B-Trade) that allows for the following functionali
 - System alerts for users when crypto assets are low or high
 - Ability for users to trade crypto assets
 
-### MILESTONES V1
+### Milestones V1
 
 - Sprint 1: 10%  - Cloud hosted app with user registration/authentication
 - Sprint 2: 40%  - User auth completion & live feed of assets listings
