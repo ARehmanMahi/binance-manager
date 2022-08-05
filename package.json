@@ -7,7 +7,9 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
+    "classnames": "^2.3.1",
     "firebase": "^9.9.1",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-firebase-hooks": "^5.0.3",
@@ -23,10 +25,70 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
+    "plugins": [
+      "react"
+    ],
     "extends": [
       "react-app",
-      "react-app/jest"
-    ]
+      "react-app/jest",
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:react/jsx-runtime"
+    ],
+    "rules": {
+      "semi": [
+        "error",
+        "always"
+      ],
+      "quotes": [
+        "error",
+        "double"
+      ],
+      "no-var": "error",
+      "jsx-quotes": "error",
+      "no-multi-spaces": "error",
+      "react/no-array-index-key": "error",
+      "react/jsx-pascal-case": "error",
+      "react/jsx-closing-bracket-location": "error",
+      "react/jsx-closing-tag-location": "error",
+      "react/jsx-tag-spacing": "error",
+      "react/jsx-curly-spacing": "error",
+      "react/jsx-boolean-value": "error",
+      "react/jsx-filename-extension": [
+        "error",
+        {
+          "allow": "as-needed",
+          "extensions": [
+            ".jsx"
+          ]
+        }
+      ],
+      "react/no-multi-comp": [
+        "error",
+        {
+          "ignoreStateless": true
+        }
+      ],
+      "react/jsx-wrap-multilines": [
+        "error",
+        {
+          "declaration": "parens-new-line",
+          "assignment": "parens-new-line",
+          "return": "parens-new-line",
+          "arrow": "parens-new-line",
+          "condition": "parens-new-line",
+          "logical": "parens-new-line",
+          "prop": "parens-new-line"
+        }
+      ],
+      "react/self-closing-comp": [
+        "error",
+        {
+          "component": true,
+          "html": true
+        }
+      ]
+    }
   },
   "browserslist": {
     "production": [

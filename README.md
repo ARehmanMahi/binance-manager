@@ -42,7 +42,7 @@ We are using "yarn" instead of "npm" in this project.
 4. If you need user authentication, make sure to enable google authentication in the settings.
 5. If you used `yarn` to install all dependencies, you shouldn't need to install anything else.
 6. Change the name of the '.env.local.example' file to '.env.local' and write your api key and other information (can be found in the settings of your project on the firebase website).
-7. The 'Login' component is commented out in 'App.js'. If you don't need it, delete it. If you do need it, move it to the page where you need it.
+7. The 'Login' component is commented out in 'App.jsx'. If you don't need it, delete it. If you do need it, move it to the page where you need it.
 8. You can import the 'Login' component on the page you want the user to log in. At the moment the logic is set up to support authorization with Google. If you want to add others (email, username and password, github) You will have to implement this on your own.
 9. Clicking on the "Continue with Google" button should open a pop-up that logs you in. If this doesn't work, check your firebase keys and if you have google authentication enabled. Once you are logged in, it will automatically update the state in the 'authSlice' reducer with your information (display name, email and access token). If you need any of these, you can get them with a useSelector hook in the component where you need them.
 10. You can check if the user is signed in by checking the state of the 'authSlice'. If user is false (empty), the user isn't signed in.
@@ -53,7 +53,7 @@ We are using "yarn" instead of "npm" in this project.
 1. You can adjust the folder structure if you have other preferances.
 2. The "redux" folder contains an example reducer (counter). You can delete this.
 3. You can use whichever CSS library you wish, or just plain CSS/SASS (preferably modules).
-4. You may modify the boilerplate (e.g. delete dummy text in App.js, the counter, the the logo.svg, etc.)
+4. You may modify the boilerplate (e.g. delete dummy text in App.jsx, the counter, the the logo.svg, etc.)
 5. V1 of this project is due in 3 weeks. Remeber to KISS (Keep It Simple, Stupid). You need to think of v1 as a conceptual boundary of constraints; anything *outside those boundaries must be saved for a future version*.
 
 <!---

@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "CommonJS",
+    "jsx": "react"
+  },
+  "exclude": [
+    ".git",
+    "public",
+    "node_modules",
+    "**/node_modules/*"
+  ]
+}
