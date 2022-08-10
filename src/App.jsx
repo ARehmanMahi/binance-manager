@@ -1,85 +1,31 @@
-import Counter from "./components/Counter";
-import logo from "./logo.svg";
-import "./App.css";
-import Login from "./components/auth/Login";
-import {Link, Outlet, Route, Routes} from "react-router-dom";
-import RequireAuth from "./utils/RequireAuth";
-import {AuthProvider, useAuth} from "./contexts/AuthContext";
-import Logout from "./components/auth/Logout";
+import {lazy, Suspense} from "react";
+import {Route, Routes} from "react-router-dom";
+import {useAuth} from "./contexts/AuthContext";
+import RequireAuth from "./components/RequireAuth";
+
+import LayoutApp from "./layouts/App";
+import LayoutGuest from "./layouts/Guest";
+import PageLoader from "./components/PageLoader";
+
+const Profile = lazy(() => import("./features/Profile"));
+const PageNotFound = lazy(() => import("./features/PageNotFound"));
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Auth Example</h1>
+  const {user} = useAuth();
+  const Layout = user ? LayoutApp : LayoutGuest;
 
-      <AuthProvider>
+  return (
+    <>
+      <Suspense fallback={<PageLoader />}>
         <Routes>
-          <Route element={<Layout />}>
-            <Route path="/" element={<PublicPage />} />
-            <Route path="/login" element={<Login />} />
-            <Route
-              path="/protected"
-              element={(
-                <RequireAuth>
-                  <ProtectedPage />
-                </RequireAuth>
-              )}
-            />
+          <Route path="/" element={<Layout />}>
+            <Route path="/profile" element={<RequireAuth><Profile /></RequireAuth>} />
+            <Route path="*" element={<PageNotFound />} />
           </Route>
         </Routes>
-      </AuthProvider>
-
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Counter />
-      </header>
-    </div>
+      </Suspense>
+    </>
   );
-}
-
-function AuthStatus() {
-  let {user} = useAuth();
-
-  if (!user) {
-    return <p>You are not logged in.</p>;
-  }
-
-  return (
-    <div>
-      Welcome {user.displayName}!{" "}
-      <Logout />
-    </div>
-  );
-}
-
-function Layout() {
-  return (
-    <div>
-      <AuthStatus />
-
-      <ul>
-        <li>
-          <Link to="/">Public Page</Link>
-        </li>
-        <li>
-          <Link to="/protected">Protected Page</Link>
-        </li>
-      </ul>
-
-      <Outlet />
-    </div>
-  );
-}
-
-function PublicPage() {
-  return <h3>Public</h3>;
-}
-
-function ProtectedPage() {
-  return <h3>Protected</h3>;
 }
 
 export default App;
