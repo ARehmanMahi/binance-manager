@@ -1,11 +1,10 @@
-import {StrictMode} from "react";
-import {createRoot} from "react-dom/client";
-import {Provider} from "react-redux";
-import {BrowserRouter as Router} from "react-router-dom";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { Provider } from "react-redux";
 import CssBaseline from "@mui/material/CssBaseline";
-import {ThemeProvider} from "@mui/material/styles";
-import {AuthProvider} from "./contexts/AuthContext";
-import {store} from "./redux/store";
+import { ThemeProvider } from "@mui/material/styles";
+import { AuthProvider } from "./contexts/AuthContext";
+import { store } from "./redux/store";
 import theme from "./theme";
 import App from "./App";
 
@@ -21,11 +20,9 @@ root.render(
     <Provider store={store}>
       <ThemeProvider theme={theme}>
         <AuthProvider>
-          <Router>
-            <CssBaseline />
+          <CssBaseline />
 
-            <App />
-          </Router>
+          <App />
         </AuthProvider>
       </ThemeProvider>
     </Provider>

@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import Button from "@mui/material/Button";
 import useTransNavigate from "../../../hooks/useTransNavigate";
 
-const AppMenu = ({logo}) => {
+const AppMenu = ({ logo }) => {
   const transNavigate = useTransNavigate();
 
   return (
@@ -12,31 +12,38 @@ const AppMenu = ({logo}) => {
       <Typography
         component="a"
         href="/"
-        onClick={e => {
+        onClick={(e) => {
           e.preventDefault();
           transNavigate("/");
         }}
         sx={{
           mr: 2,
-          display: {xs: "none", md: "flex"},
+          display: { xs: "none", md: "flex" },
           textDecoration: "none",
         }}
       >
-        <Box component="img" sx={{height: 44}} alt="logo" src={logo} />
+        <Box component="img" sx={{ height: 44 }} alt="logo" src={logo} />
       </Typography>
-      <Box sx={{flexGrow: 1, display: {xs: "none", md: "flex"}}}>
+      <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
         <Button
           onClick={() => transNavigate("/faq")}
-          sx={{my: 2, color: "white", display: "block"}}
+          sx={{ my: 2, color: "white", display: "block" }}
         >
-          FAQ btn
+          FAQ
         </Button>
 
         <Button
           onClick={() => transNavigate("/about-us")}
-          sx={{my: 2, color: "white", display: "block"}}
+          sx={{ my: 2, color: "white", display: "block" }}
         >
-          About Us btn
+          About Us
+        </Button>
+
+        <Button
+          onClick={() => transNavigate("/market")}
+          sx={{ my: 2, color: "white", display: "block" }}
+        >
+          Market
         </Button>
       </Box>
     </>
@@ -44,7 +51,7 @@ const AppMenu = ({logo}) => {
 };
 
 AppMenu.propTypes = {
-  logo: PropTypes.any
+  logo: PropTypes.any,
 };
 
 export default AppMenu;
