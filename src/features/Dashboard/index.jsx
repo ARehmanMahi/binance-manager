@@ -1,7 +1,7 @@
-import {useAuth} from "../../contexts/AuthContext";
+import { useAuth } from "../../contexts/AuthContext";
 
 const Dashboard = () => {
-  let {user} = useAuth();
+  let { user } = useAuth();
 
   return (
     <>

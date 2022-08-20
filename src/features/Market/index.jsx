@@ -38,7 +38,7 @@ function reducer(state, { payload }) {
 }
 
 function toLocaleString(value) {
-  const locale = "" || undefined;
+  let locale = "" || undefined;
   let localeOptions = { minimumFractionDigits: 2, maximumFractionDigits: 2 };
 
   let number = Number(value);

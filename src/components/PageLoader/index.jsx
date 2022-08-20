@@ -1,9 +1,5 @@
 const PageLoader = () => {
-  return (
-    <>
-      Loading...
-    </>
-  );
+  return <>Loading...</>;
 };
 
 export default PageLoader;

@@ -1,13 +1,13 @@
-import React, {useContext, useEffect, useState} from "react";
-import {auth} from "../firebase/client";
-import {onAuthStateChanged, signOut} from "firebase/auth";
-import {useSignInWithGoogle} from "react-firebase-hooks/auth";
+import React, { useContext, useEffect, useState } from "react";
+import { auth } from "../firebase/client";
+import { onAuthStateChanged, signOut } from "firebase/auth";
+import { useSignInWithGoogle } from "react-firebase-hooks/auth";
 import PropTypes from "prop-types";
 import PageLoader from "../components/PageLoader";
 
 const AuthContext = React.createContext(null);
 
-const AuthProvider = ({children: Children}) => {
+const AuthProvider = ({ children: Children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const [signInWithGoogle] = useSignInWithGoogle(auth);
@@ -21,7 +21,7 @@ const AuthProvider = ({children: Children}) => {
   }
 
   useEffect(() => {
-    return onAuthStateChanged(auth, authUser => {
+    return onAuthStateChanged(auth, (authUser) => {
       setUser(authUser);
       setLoading(false);
     });
@@ -48,4 +48,4 @@ const useAuth = () => {
   return useContext(AuthContext);
 };
 
-export {useAuth, AuthProvider};
+export { useAuth, AuthProvider };
