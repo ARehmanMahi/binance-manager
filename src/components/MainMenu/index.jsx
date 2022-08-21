@@ -17,7 +17,7 @@ import { useAuth } from "../../contexts/AuthContext";
 import useTransNavigate from "../../hooks/useTransNavigate";
 
 const MainMenu = () => {
-  const transNavigate = useTransNavigate();
+  const [, transNavigate] = useTransNavigate();
   const auth = useAuth();
 
   const [anchorElUser, setAnchorElUser] = useState(null);

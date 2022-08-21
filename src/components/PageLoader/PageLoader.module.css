@@ -1,6 +1,67 @@
 .container {
-    display: flex;
-    justify-content: center;
-    margin: 1rem;
-    gap: 2rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.loader {
+  /* the colors */
+  --c1: #F77825;
+  --c2: #D3CE3D;
+  --c3: #60B99A;
+  --c4: #554236;
+  /**/
+
+  width: 120px; /* control the size */
+  aspect-ratio: 0;
+  --_g: no-repeat radial-gradient(#000 68%, #0000 71%);
+  -webkit-mask: var(--_g), var(--_g), var(--_g);
+  -webkit-mask-size: 200% 80%;
+  background: conic-gradient(var(--c1) 50%, var(--c2) 0) no-repeat,
+  conic-gradient(var(--c3) 50%, var(--c4) 0) no-repeat;
+  background-size: 200% 45%;
+  animation: back 4s infinite steps(1),
+  load 2s infinite;
+}
+
+@keyframes load {
+  0% {
+    -webkit-mask-position: 0% 0%, 30% 0%, 60% 0%
+  }
+  16.67% {
+    -webkit-mask-position: 0% 100%, 30% 0%, 60% 0%
+  }
+  33.33% {
+    -webkit-mask-position: 0% 100%, 30% 100%, 60% 0%
+  }
+  50% {
+    -webkit-mask-position: 0% 100%, 30% 100%, 60% 100%
+  }
+  66.67% {
+    -webkit-mask-position: 0% 0%, 30% 100%, 60% 100%
+  }
+  83.33% {
+    -webkit-mask-position: 0% 0%, 30% 0%, 60% 100%
+  }
+  100% {
+    -webkit-mask-position: 0% 0%, 30% 0%, 60% 0%
+  }
+}
+
+@keyframes back {
+  0%,
+  100% {
+    background-position: 0% 0%, 0% 100%
+  }
+  25% {
+    background-position: 100% 0%, 0% 100%
+  }
+  50% {
+    background-position: 100% 0%, 100% 100%
+  }
+  75% {
+    background-position: 0% 0%, 100% 100%
+  }
 }

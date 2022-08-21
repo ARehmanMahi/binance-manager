@@ -9,7 +9,7 @@ import PropTypes from "prop-types";
 import useTransNavigate from "../../../hooks/useTransNavigate";
 
 const MobileManu = ({ logo }) => {
-  const transNavigate = useTransNavigate();
+  const [, transNavigate] = useTransNavigate();
 
   const [anchorElNav, setAnchorElNav] = useState(null);
 

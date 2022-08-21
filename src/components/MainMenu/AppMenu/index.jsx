@@ -5,7 +5,7 @@ import Button from "@mui/material/Button";
 import useTransNavigate from "../../../hooks/useTransNavigate";
 
 const AppMenu = ({ logo }) => {
-  const transNavigate = useTransNavigate();
+  const [, transNavigate] = useTransNavigate();
 
   return (
     <>

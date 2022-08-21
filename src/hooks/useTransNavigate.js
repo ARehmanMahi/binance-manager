@@ -1,13 +1,16 @@
 import { useNavigate } from "react-router-dom";
-import { startTransition } from "react";
+import { useTransition } from "react";
 
 const useTransNavigate = () => {
   const navigate = useNavigate();
+  const [isPending, startTransition] = useTransition();
 
-  return (url) =>
+  const transNavigate = (url) =>
     startTransition(() => {
       navigate(url);
     });
+
+  return [isPending, transNavigate];
 };
 
 export default useTransNavigate;
