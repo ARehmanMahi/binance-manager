@@ -1,13 +1,16 @@
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import { useAuth } from "../../contexts/AuthContext";
-import { Navigate } from "react-router-dom";
+import { Navigate, useLocation } from "react-router-dom";
 
 const Login = () => {
   const auth = useAuth();
+  const location = useLocation();
+
+  const from = location.state?.from?.pathname || "/";
 
   return auth.user ? (
-    <Navigate to="/" />
+    <Navigate to={from} />
   ) : (
     <Box
       display="flex"
